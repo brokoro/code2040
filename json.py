@@ -68,4 +68,9 @@ url = 'http://challenge.code2040.org/api/validatetime'
 data = {'token': identifier,'datestamp': iso}
 r = requests.post(url, data=json.dumps(data), headers=headers)
 
+# Grading 
+
+url = 'http://challenge.code2040.org/api/status'
+data = {'token': identifier}
+r = requests.post(url, data=json.dumps(data), headers=headers)
 
